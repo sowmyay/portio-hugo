@@ -13,15 +13,6 @@
         <div class="row">
             <div class="col-lg-20 offset-lg-1">
                 <div class="about_content">
-                    <!--<div class="about_content-thumb">
-                        <div class="about-svg">
-                            <img src="images/hero/figure-svg.svg" alt="figure-svg">
-                        </div>
-                        <div class="about_content-thumb-image">
-                            <img src="{{ .image | absURL }}" alt="about-img"
-                                style='-webkit-mask: url({{"images/about/about-mask-svg.svg" | absURL}}); -webkit-mask-size: contain;'>
-                        </div>
-                    </div>-->
                     <div class="about_content-inner">
                         <div class="about_content-inner-blob">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -29,8 +20,8 @@
                                 <defs>
                                     <linearGradient id="c" x1="0.929" y1="0.111" x2="0.263" y2="0.935"
                                         gradientUnits="objectBoundingBox">
-                                        <stop offset="0" stop-color="#f1f6f9" />
-                                        <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
+                                        <stop offset="0" stop-color="#ffc107" />
+                                        <stop offset="1" stop-color="#dc3545" stop-opacity="0" />
                                     </linearGradient>
                                 </defs>
                                 <g data-name="blob-shape (3)">
@@ -43,9 +34,9 @@
                             {{ .content | markdownify}}
                         </div>
                         <div>
-                            <a class="btn btn-primary mr-3 btn-zoom"
+                            <a class="btn btn-warning mr-3 btn-zoom"
                                 href="{{ .button1Target | absURL }}">{{ .button1Name }}</a>
-                            <a class="btn btn-outline-primary btn-zoom" href="{{ .button2Target | absURL }}">
+                            <a class="btn btn-outline-warning btn-zoom" href="{{ .button2Target | absURL }}">
                                 {{ .button2Name }} </a>
                         </div>
                     </div>
