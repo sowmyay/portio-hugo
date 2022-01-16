@@ -12,14 +12,14 @@
                     </div>
 
                     <div class="btn-group nav mt-5">
-                        <a href="#{{.tab1Target}}" class="btn btn-warning active" data-toggle="tab">{{ .tab1Name }}</a>
-                        <a href="#{{.tab2Target}}" class="btn btn-warning" data-toggle="tab">{{ .tab2Name }}</a>
+                        <a href="#{{.tab1Target}}" class="btn btn-warning" data-toggle="tab">{{ .tab1Name }}</a>
+                        <a href="#{{.tab2Target}}" class="btn btn-warning active" data-toggle="tab">{{ .tab2Name }}</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="tab-content ">
-                    <div class="resume__education tab-pane active" id="{{.tab1Target}}">
+                    <div class="resume__education tab-pane" id="{{.tab1Target}}">
                         {{ $Section := .education }}
                         {{ range $Section }}
                         <div class="resume__education_item">
@@ -30,7 +30,7 @@
 
                     </div>
 
-                    <div class="resume__education tab-pane" id="{{.tab2Target}}">
+                    <div class="resume__education tab-pane active" id="{{.tab2Target}}">
                         {{ $Section := .experience }}
                         {{ range $Section }}
                         <div class="resume__education_item">
