@@ -36,7 +36,7 @@
       <div class="col-lg-6">
         <div class="hero_figure">
           <img src="{{ .image | absURL }}" alt="hero-image" style='
-                  -webkit-mask: url({{"images/hero/hero-mask-svg.png" | absURL }});
+                  -webkit-mask: url({{ .mask | absURL }});
                   -webkit-mask-repeat: no-repeat;
                   -webkit-mask-size: contain;
                   -webkit-mask-position: center center;
